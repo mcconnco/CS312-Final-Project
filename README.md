@@ -9,7 +9,7 @@ This repo is a quick way to create a minecraft server. The program is almost ent
 * AWS CLI
 * GitHub (This should be obvious)
 
-We will get into the details of how we utilize each of these down in the 'Execution' section
+We will get into the details of how we utilize each of these down in the `Execution` section
 
 ## Requirements
 
