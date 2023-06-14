@@ -22,6 +22,9 @@ Before you can utilize this repo properly, you need to ensure that you have Terr
 
 ## Diagram
 
+![image](https://github.com/mcconnco/CS312-Final-Project/assets/46498418/31d62f32-eb02-4763-ba4f-d63b91a2a7ba)
+
+
 ## Execution
 
 ## How to Connect
