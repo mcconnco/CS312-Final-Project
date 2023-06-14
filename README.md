@@ -57,7 +57,6 @@ Alright, 5 minutes has passed and we're ready to confirm that the server is runn
 nmap -sV -Pn -p T:25565 <instance_public_ip>
 
 ```
-.
 <br>
 
 You remember that public IP I told you to write down? That is what you include in the nmap command. Your command response will look like this on a success:
