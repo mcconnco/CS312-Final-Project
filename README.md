@@ -61,6 +61,7 @@ nmap -sV -Pn -p T:25565 <instance_public_ip>
 
 You remember that public IP I told you to write down? That is what you include in the nmap command. Your command response will look like this on a success:
 
+![image](https://github.com/mcconnco/CS312-Final-Project/assets/46498418/c30162c6-9899-417c-a263-c5f6c703cf8a)
 
 ## How to Connect
 Alrighty! You've got the server up and running now so now you want to launch a game of Minecraft, create a new world, and connect to the public IP address that you wrote down.
