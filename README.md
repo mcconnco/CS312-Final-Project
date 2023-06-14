@@ -18,6 +18,7 @@ Before you can utilize this repo properly, you need to ensure that you have Terr
 `AWS CLI`: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html <br>
 `NMAP`: https://nmap.org/download <br>
 <br>
+`Minecraft`: https://www.minecraft.net/en-us/download <br>
 
 In addition, you will need an AWS account so that we can build our EC2 instance. <br>
 
@@ -37,6 +38,33 @@ aws_access_key_id= *access key*
 aws_secret_access_key= *secret access key*
 aws_session_token= *session token*
 ```
+Alright, if you've updated your credentials correctly you are now ready to run the program. If you have experience with EC2 instances you may be wondering "What about our key pair? We need to have a key pair in order to ssh into our server". We're gonna stop you right there and remind you of the second file you downloaded: `key-pair-main.tf`. This file does the incredible task of creating a key pair for us when we run our program and linking it to the EC2 instance through `main.tf`. <br>
+
+With that potential issue out of the way, we're gonna jump straight into how you're going to run our program. It's incredibly simple so don't worry too much. We took the extra time to ensure that you only have to run a single line of code in order to make this program work. That single line of code is: <br>
+
+```
+bash build.sh
+```
+<br>
+
+Our build.sh contains 3 lines of code that run and only 2 that are actually important. Those 2 lines are ``terraform init -upgrade`` & ``terraform apply -auto-approve``. These 2 lines create what our terraform needs to run, and then auto runs it so you have to click nothing. Now, we have included an output in our terraform so that when it finishes, it will tell you the public ip address of the instance. Write this down somewhere as it is incredibly important in the next section. <br>
+
+Once the build.sh script is done running, you need to wait a couple of minutes. This is the most prominant downside to the approach we are using. As the User Data is running on the server, it gives no indications of it's run status. So, we ask that you wait for about 3-5 minutes before proceeding to the next step which is verifying that the server is up and running. <br>
+
+Alright, 5 minutes has passed and we're ready to confirm that the server is running. I (the creator of this repo) already know that it worked but you definitely want to see it for yourself. In order to check the servers status from your terminal you will run this line: <br>
+
+```
+nmap -sV -Pn -p T:25565 <instance_public_ip>
+
+```
+.
+<br>
+
+You remember that public IP I told you to write down? That is what you include in the nmap command. Your command response will look like this on a success:
 
 
 ## How to Connect
+Alrighty! You've got the server up and running now so now you want to launch a game of Minecraft, create a new world, and connect to the public IP address that you wrote down.
+
+I hope that this program was useful to you and that you have a great rest of your day!
+Thank you for reading!
