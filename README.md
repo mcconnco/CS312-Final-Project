@@ -12,6 +12,12 @@ This repo is a quick way to create a minecraft server. The program is almost ent
 We will get into the details of how we utilize each of these down in the `Execution` section
 
 ## Requirements
+Before you can utilize this repo properly, you need to ensure that you have Terraform CLI, AWS CLI, & nmap installed. You can install all of them from the links below:
+``
+Terraform CLI: https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
+AWS CLI: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+NMAP: https://nmap.org/download
+``
 
 ## Diagram
 
