@@ -1,11 +1,11 @@
 # CS312-Final-Project
 
-##Background
+## Background
 
-##Requirements
+## Requirements
 
-##Diagram
+## Diagram
 
-##List of Commands
+## List of Commands
 
-##How to Connect
+## How to Connect
