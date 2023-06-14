@@ -3,9 +3,8 @@ Description=Minecraft Server
 After=network.target
 
 [Service]
-User=minecraft
-WorkingDirectory=/usr/local/server
-ExecStart=/usr/bin/java -Xmx1024M -Xms1024M -jar server.jar nogui
+WorkingDirectory=/usr/local/minecraft
+ExecStart=/usr/bin/java -Xmx1024M -Xms1024M -jar /usr/local/minecraft/server.jar nogui
 RemainAfterExit=true
 Restart=always
 RestartSec=30
